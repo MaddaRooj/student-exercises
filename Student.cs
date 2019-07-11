@@ -16,7 +16,6 @@ namespace student_exercises
             LastName = lastname;
             SlackHandle = slackhandle;
             StudentCohort = cohort;
-        }
-        
+        } 
     }
 }
