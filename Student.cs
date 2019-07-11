@@ -9,7 +9,7 @@ namespace student_exercises
         public string LastName { get; set; }
         public string SlackHandle { get; set; }
         public string StudentCohort { get; set; }
-        public List<KeyValuePair> StudentExercises { get; set; }
+        public List<Dictionary<string,string>> StudentExercises { get; set; }
         public Student(string firstname, string lastname, string slackhandle, string cohort)
         {
             FirstName = firstname;
