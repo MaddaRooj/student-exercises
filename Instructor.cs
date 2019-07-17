@@ -20,7 +20,7 @@ namespace student_exercises
         }
         public void Assign(Student student, Exercise exercise)
         {
-            Console.WriteLine($"I have assigned {student.FirstName} {student.LastName} with {exercise.ExerciseName}, Muahahahaha!");
+            Console.WriteLine($"I, {FirstName} {LastName}, have assigned {student.FirstName} {student.LastName} with {exercise.ExerciseName}, Muahahahaha!");
             student.StudentExercises.Add(exercise);
         }  
     }
