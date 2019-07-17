@@ -53,15 +53,15 @@ namespace student_exercises
             };
 
             System.Console.WriteLine();
-            instructor1.Assign(student1, exercise2);
-            instructor1.Assign(student1, exercise3);
-            instructor1.Assign(student2, exercise1);
+            instructor4.Assign(student1, exercise2);
+            instructor2.Assign(student1, exercise3);
+            instructor3.Assign(student2, exercise1);
             instructor1.Assign(student3, exercise4);
-            instructor1.Assign(student4, exercise2);
+            instructor4.Assign(student4, exercise2);
             System.Console.WriteLine();
 
             foreach(var student in students){
-                System.Console.WriteLine($"{student.FirstName}:");
+                System.Console.WriteLine($"{student.FirstName}'s Assignment List:");
                 foreach(var exercise in student.StudentExercises){
                     System.Console.WriteLine($"{exercise.ExerciseName}");
                 }
