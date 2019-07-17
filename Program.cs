@@ -10,7 +10,7 @@ namespace student_exercises
             // Create exercises and add to list-----------------------------------
             List<Exercise> exercises = new List<Exercise>();
             var exercise1 = new Exercise("C# Starter Project", "C#");
-            var exercise2 = new Exercise("React Nut", "ReactJS");
+            var exercise2 = new Exercise("React Nutshell", "ReactJS");
             var exercise3 = new Exercise("english-idioms", "C#");
             var exercise4 = new Exercise("urban-planner", "C#");
             exercises.Add(exercise1);
@@ -46,10 +46,27 @@ namespace student_exercises
                 Console.WriteLine($"{student.FirstName} {student.LastName}");
             };
 
+            System.Console.WriteLine();
             foreach(Exercise exercise in exercises)
             {
                 Console.WriteLine($"Assignment: {exercise.ExerciseName} in {exercise.ExerciseLanguage}");
             };
+
+            System.Console.WriteLine();
+            instructor1.Assign(student1, exercise2);
+            instructor1.Assign(student1, exercise3);
+            instructor1.Assign(student2, exercise1);
+            instructor1.Assign(student3, exercise4);
+            instructor1.Assign(student4, exercise2);
+            System.Console.WriteLine();
+
+            foreach(var student in students){
+                System.Console.WriteLine($"{student.FirstName}:");
+                foreach(var exercise in student.StudentExercises){
+                    System.Console.WriteLine($"{exercise.ExerciseName}");
+                }
+                System.Console.WriteLine();
+            }
         }
     }
 }
