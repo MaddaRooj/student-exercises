@@ -9,13 +9,14 @@ namespace student_exercises
         public string LastName { get; set; }
         public string SlackHandle { get; set; }
         public string StudentCohort { get; set; }
-        public List<Dictionary<string,string>> StudentExercises { get; set; }
+        public List<Exercise> StudentExercises { get; set; }
         public Student(string firstname, string lastname, string slackhandle, string cohort)
         {
             FirstName = firstname;
             LastName = lastname;
             SlackHandle = slackhandle;
             StudentCohort = cohort;
+            StudentExercises = new List<Exercise>();
         } 
     }
 }

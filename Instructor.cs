@@ -18,9 +18,10 @@ namespace student_exercises
             InstructorCohort = cohort;
             InstructorSpecialMove = specialattack;
         }
-        public void Assign()
+        public void Assign(Student student, Exercise exercise)
         {
-            Console.WriteLine("I have assigned a student with an assignment, Muahahahaha!");
+            Console.WriteLine($"I have assigned {student.FirstName} {student.LastName} with {exercise.ExerciseName}, Muahahahaha!");
+            student.StudentExercises.Add(exercise);
         }  
     }
 }
