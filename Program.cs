@@ -91,7 +91,7 @@ namespace student_exercises
             // Select all students that are in cohort 32
             System.Console.WriteLine();
             var studentsOfCohort32 = from student in students
-                where student.StudentCohort == cohort1
+                where student.Cohort == cohort1
                 select student;
 
             System.Console.WriteLine("All Students in Cohort 32:");
@@ -138,8 +138,6 @@ namespace student_exercises
             foreach(Cohort cohort in studentCount){
                 System.Console.WriteLine($"{cohort.CohortName} - {cohort.CohortStudents.Count}");
             };
-
-
         }
     }
 }
