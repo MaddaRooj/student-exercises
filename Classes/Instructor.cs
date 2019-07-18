@@ -8,9 +8,9 @@ namespace student_exercises
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string SlackHandle { get; set; }
-        public string InstructorCohort { get; set; }
+        public Cohort InstructorCohort { get; set; }
         public string InstructorSpecialMove { get; set; }
-        public Instructor(string firstname, string lastname, string slackhandle, string cohort, string specialattack)
+        public Instructor(string firstname, string lastname, string slackhandle, Cohort cohort, string specialattack)
         {
             FirstName = firstname;
             LastName = lastname;
